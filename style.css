@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --green: #B4F461;
+    --title: #B4F461;
+    --paragraph: rgba(17, 17, 17, 0.7);
+    --placeholder: rgba(17, 17, 17, 0.4);
+    --border: rgba(17, 17, 17, 0.1);
+}
+.lexend-font{
+    font-family: "Lexend", sans-serif;
+}
+
+
+/* header section styles */
+header{
+    background-color: rgb(241, 241, 241);
+    backdrop-filter: blur(3px);
+
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1140px;
+    margin: auto;
+    padding: 24px;
+}
+.btn-container{
+    max-width: 1140px;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    gap: 1rem;
+    padding: 24px 0 48px;
+}
+.btn{
+    padding: 12px 24px;
+    font-size: 1.25rem;
+    font-weight: 600;
+    border-radius: 8px;
+    border: none;
+    background-color: var(--green);
+    font-family: "Lexend", sans-serif;
+    cursor: pointer;
+}
+.btn2{
+    padding: 12px 24px;
+    font-size: 1.25rem;
+    font-weight: 600;
+    border-radius: 8px;
+    color: var(--paragraph);
+    border: 1px solid var(--placeholder);
+    font-family: "Lexend", sans-serif;
+    cursor: pointer;
+}
+#logo{
+    display: flex;
+    gap: 16px;
+    align-items: center;
+}
+#balance-div{
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    color: var(--paragraph);
+    font-weight: 500;
+    font-size: 1.25rem;
+}
+
+
+
+
+
+
+/* Mobile device*/
+@media screen and (max-width: 576px){
+    #logo{
+        display: none;
+    }
+}
