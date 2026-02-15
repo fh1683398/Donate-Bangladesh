@@ -1,12 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Donation Bangladesh</title>
 
     <link rel="stylesheet" href="./style.css">
+
+    <!-- tailwind css -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
+
 <body class="lexend-font">
     <header>
         <nav>
@@ -17,17 +22,122 @@
             </div>
             <div id="balance-div">
                 <img src="./assets/coin.png" alt="">
-                <h4><span>5500</span> BDT</h4>
+                <h4><span id="main-balance">5500</span> BDT</h4>
             </div>
         </nav>
+        <hr>
         <div class="btn-container">
-            <button class="btn">Donation</button>
-            <button class="btn2">History</button>
+            <button id="donationBtn" class="btn">Donation</button>
+            <button id="historyBtn" class="btn2">History</button>
         </div>
     </header>
+
     <main>
+        <!-- first card -->
+        <div id="card1" class="card">
+            <!-- image -->
+            <div class="child">
+                <img class="" src="./assets/noakhali.png" alt="">
+            </div>
+
+            <!-- content -->
+            <div class="child">
+                <div class="donated-amount-container">
+                    <img src="./assets/coin.png" alt="">
+                    <p><span id="noakhali-total">0</span> BDT</p>
+                </div>
+                <div>
+                    <h3 id="title1" class="title">Donate for Flood at Noakhali, Bangladesh</h3>
+                    <p class="paragraph"> The recent floods in Noakhali have caused significant damage to homes
+                        infrastructure. Your
+                        donation
+                        will help provide essential supplies and to those affected by this disaster. Every contribution,
+                        big
+                        or small, makes difference. Please join us in supporting the relief efforts and making a
+                        positive
+                        impact on the lives of those in need.</p>
+                </div>
+                <div class="input-container">
+                    <input id="noakhali-input" type="text" placeholder="Write Donation Amount">
+                    <button id="noakhali-btn" class="btn">Donate Now</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- second card -->
+        <div id="card2" class="card">
+            <!-- image -->
+            <div class="child image-wrapper">
+                <img class="" src="./assets/feni.png" alt="">
+            </div>
+
+            <!-- content -->
+            <div class="child">
+                <div class="donated-amount-container">
+                    <img src="./assets/coin.png" alt="">
+                    <p><span>0</span> BDT</p>
+                </div>
+                <div>
+                    <h3 id="title2" class="title">Donate for Flood Relief in Feni,Bangladesh</h3>
+                    <p class="paragraph">The recent floods in Feni have devastated local communities, leading to severe
+                        disruption and loss. Your generous donation will help provide immediate aid, including food,
+                        clean water, and medical supplies, to those affected by this calamity. Together, we can offer
+                        crucial support and help rebuild lives in the aftermath of this disaster. Every contribution
+                        counts towards making a real difference. Please consider donating today to assist those in
+                        urgent need.</p>
+                </div>
+                <div class="input-container">
+                    <input type="text" placeholder="Write Donation Amount">
+                    <button class="btn">Donate Now</button>
+                </div>
+            </div>
+        </div>
+
+        <!--Third card  -->
+        <div id="card3" class="card">
+            <!-- image -->
+            <div class="child">
+                <img class="" src="./assets/quota-protest.png" alt="">
+            </div>
+
+            <!-- content -->
+            <div class="child">
+                <div class="donated-amount-container">
+                    <img src="./assets/coin.png" alt="">
+                    <p><span>0</span> BDT</p>
+                </div>
+                <div>
+                    <h3 id="title3" class="title">Aid for Injured in the Quota Movement</h3>
+                    <p class="paragraph">The recent Quota movement has resulted in numerous injuries and significant
+                        hardship for many individuals. Your support is crucial in providing medical assistance,
+                        rehabilitation, and necessary supplies to those affected. By contributing, you help ensure that
+                        injured individuals receive the care and support they need during this challenging time. Every
+                        donation plays a vital role in alleviating their suffering and aiding in their recovery. Please
+                        consider making a donation to support these brave individuals in their time of need.</p>
+                </div>
+                <div class="input-container">
+                    <input type="text" placeholder="Write Donation Amount">
+                    <button class="btn">Donate Now</button>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- history container -->
+        <div id="history-container" class="hidden">
+
+        </div>
+        <!-- modal -->
+        <div id="modal" class="modal-container hidden">
+            <div class="modal-content">
+                <h3 id="modal-message" style="font-size: 2rem; font-weight: 700; color: var(--title);"></h3>
+                <p id="modal-passage" style="color: var(--paragraph); margin-bottom: 16px;"></p>
+                <button id="close-modal" class="btn2">close</button>
+            </div>
+        </div>
 
     </main>
     <script src="./home.js"></script>
 </body>
+
 </html>
